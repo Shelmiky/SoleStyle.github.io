@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleStyle - Интернет-магазин обуви</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"></span>
+                    SoleStyle
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Главная</a></li>
+                    <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contact.html" class="nav-link">Контакты</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="search-btn" aria-label="Поиск"></button>
+                    <button class="cart-btn" aria-label="Корзина"></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Стильная обувь для каждого шага</h1>
+                <p class="hero-subtitle">Откройте для себя коллекцию премиальной обуви, которая сочетает комфорт, качество и современный дизайн</p>
+                <a href="catalog.html" class="cta-button">Посмотреть каталог</a>
+            </div>
+            <div class="hero-image">
+                <div class="floating-shoe"></div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon"></div>
+                        <h3>Быстрая доставка</h3>
+                        <p>Доставим ваш заказ в течение 1-3 дней по всей России</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon"></div>
+                        <h3>Премиум качество</h3>
+                        <p>Только проверенные бренды и натуральные материалы</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon"></div>
+                        <h3>Гарантия возврата</h3>
+                        <p>30 дней на возврат без лишних вопросов</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-products">
+            <div class="container">
+                <h2 class="section-title">Популярные модели</h2>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <div class="product-image">
+                            <div class="product-badge">Хит</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Кроссовки Urban Runner</h3>
+                            <p class="product-price">
+                                <span class="current-price">8 990 ₽</span>
+                                <span class="old-price">12 990 ₽</span>
+                            </p>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image"></div>
+                        <div class="product-info">
+                            <h3 class="product-name">Ботинки Classic Leather</h3>
+                            <p class="product-price">
+                                <span class="current-price">15 990 ₽</span>
+                            </p>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image">
+                            <div class="product-badge new">Новинка</div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Туфли Business Elite</h3>
+                            <p class="product-price">
+                                <span class="current-price">22 990 ₽</span>
+                            </p>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Подпишитесь на новости</h2>
+                    <p>Получайте информацию о новых коллекциях и специальных предложениях</p>
+                    <form class="newsletter-form" novalidate>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                            <label for="email" class="sr-only">Email адрес</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SoleStyle</h4>
+                    <p>Ваш надежный партнер в мире стильной обуви</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <address>
+                        <p> +7 (495) 123-45-67</p>
+                        <p> info@solestyle.ru</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SoleStyle. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

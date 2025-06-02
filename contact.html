@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - SoleStyle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">👟</span>
+                    SoleStyle
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav-link">Каталог</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contact.html" class="nav-link active">Контакты</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="search-btn" aria-label="Поиск">🔍</button>
+                    <button class="cart-btn" aria-label="Корзина">🛒</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1>Свяжитесь с нами</h1>
+                <p>Мы всегда готовы помочь вам с выбором идеальной обуви</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Наши контакты</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Адрес офиса</h3>
+                                <address>
+                                    г. Москва, ул. Тверская, д. 15<br>
+                                    БЦ "Центральный", офис 501
+                                </address>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Телефон</h3>
+                                <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                                <p><em>Ежедневно с 9:00 до 21:00</em></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@solestyle.ru">info@solestyle.ru</a></p>
+                                <p><a href="mailto:support@solestyle.ru">support@solestyle.ru</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">💬</div>
+                            <div class="contact-details">
+                                <h3>Социальные сети</h3>
+                                <div class="social-links">
+                                    <a href="#" class="social-link">Instagram</a>
+                                    <a href="#" class="social-link">VKontakte</a>
+                                    <a href="#" class="social-link">Telegram</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <h2>Напишите нам</h2>
+                        <form class="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Имя *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                    <span class="error-message">Пожалуйста, введите ваше имя</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Фамилия</label>
+                                    <input type="text" id="lastName" name="lastName">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message">Пожалуйста, введите корректный email</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Тема обращения *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Выберите тему</option>
+                                    <option value="order">Вопрос по заказу</option>
+                                    <option value="product">Вопрос о товаре</option>
+                                    <option value="delivery">Доставка</option>
+                                    <option value="return">Возврат/обмен</option>
+                                    <option value="cooperation">Сотрудничество</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                                <span class="error-message">Пожалуйста, выберите тему обращения</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Опишите ваш вопрос подробнее..." required></textarea>
+                                <span class="error-message">Пожалуйста, введите сообщение</span>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="agreement" required>
+                                    <span class="checkmark"></span>
+                                    Я согласен с <a href="#" class="link">политикой конфиденциальности</a> *
+                                </label>
+                                <span class="error-message">Необходимо согласие с политикой конфиденциальности</span>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Подписаться на новости и специальные предложения
+                                </label>
+                            </div>
+
+                            <button type="submit" class="submit-btn">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h2>Как нас найти</h2>
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <p>🗺️ Интерактивная карта</p>
+                        <p>г. Москва, ул. Тверская, д. 15</p>
+                        <p><small>Ближайшие станции метро: Тверская, Пушкинская</small></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="working-hours">
+            <div class="container">
+                <h2>Режим работы</h2>
+                <div class="hours-grid">
+                    <div class="hours-card">
+                        <h3>Интернет-магазин</h3>
+                        <p><strong>Круглосуточно</strong></p>
+                        <p>Оформляйте заказы в любое время</p>
+                    </div>
+                    <div class="hours-card">
+                        <h3>Служба поддержки</h3>
+                        <p><strong>Ежедневно: 9:00 - 21:00</strong></p>
+                        <p>Консультации по телефону и email</p>
+                    </div>
+                    <div class="hours-card">
+                        <h3>Офис</h3>
+                        <p><strong>Пн-Пт: 10:00 - 19:00</strong></p>
+                        <p>Суббота: 11:00 - 16:00<br>Воскресенье: выходной</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SoleStyle</h4>
+                    <p>Ваш надежный партнер в мире стильной обуви</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <address>
+                        <p>📞 +7 (495) 123-45-67</p>
+                        <p>📧 info@solestyle.ru</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SoleStyle. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

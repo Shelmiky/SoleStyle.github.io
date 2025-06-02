@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - SoleStyle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">👟</span>
+                    SoleStyle
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="catalog.html" class="nav-link active">Каталог</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contact.html" class="nav-link">Контакты</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="search-btn" aria-label="Поиск">🔍</button>
+                    <button class="cart-btn" aria-label="Корзина">🛒</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1>Каталог обуви</h1>
+                <p>Найдите идеальную пару из нашей коллекции</p>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <aside class="filters">
+                    <h2>Фильтры</h2>
+                    <form class="filter-form">
+                        <div class="filter-group">
+                            <h3>Категория</h3>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="sneakers">
+                                <span class="checkmark"></span>
+                                Кроссовки
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="boots">
+                                <span class="checkmark"></span>
+                                Ботинки
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="category" value="shoes">
+                                <span class="checkmark"></span>
+                                Туфли
+                            </label>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <h3>Размер</h3>
+                            <select name="size" class="select-field">
+                                <option value="">Выберите размер</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <h3>Цена</h3>
+                            <div class="price-range">
+                                <input type="range" min="0" max="50000" value="25000" class="price-slider">
+                                <div class="price-values">
+                                    <span>0 ₽</span>
+                                    <span>50 000 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </aside>
+
+                <div class="catalog-content">
+                    <div class="catalog-header">
+                        <div class="results-count">Найдено: <strong>24 товара</strong></div>
+                        <select class="sort-select">
+                            <option value="popular">По популярности</option>
+                            <option value="price-asc">Цена: по возрастанию</option>
+                            <option value="price-desc">Цена: по убыванию</option>
+                            <option value="newest">Сначала новые</option>
+                        </select>
+                    </div>
+
+                    <div class="products-grid catalog-grid">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge">-30%</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Кроссовки Urban Runner</h3>
+                                <p class="product-description">Удобные кроссовки для повседневной носки</p>
+                                <p class="product-price">
+                                    <span class="current-price">8 990 ₽</span>
+                                    <span class="old-price">12 990 ₽</span>
+                                </p>
+                                <div class="product-actions">
+                                    <button class="add-to-cart">В корзину</button>
+                                    <button class="wishlist-btn" aria-label="В избранное">♡</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Ботинки Classic Leather</h3>
+                                <p class="product-description">Классические кожаные ботинки</p>
+                                <p class="product-price">
+                                    <span class="current-price">15 990 ₽</span>
+                                </p>
+                                <div class="product-actions">
+                                    <button class="add-to-cart">В корзину</button>
+                                    <button class="wishlist-btn" aria-label="В избранное">♡</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image">
+                                <div class="product-badge new">Новинка</div>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Туфли Business Elite</h3>
+                                <p class="product-description">Элегантные туфли для деловых встреч</p>
+                                <p class="product-price">
+                                    <span class="current-price">22 990 ₽</span>
+                                </p>
+                                <div class="product-actions">
+                                    <button class="add-to-cart">В корзину</button>
+                                    <button class="wishlist-btn" aria-label="В избранное">♡</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Кеды Casual Style</h3>
+                                <p class="product-description">Стильные кеды на каждый день</p>
+                                <p class="product-price">
+                                    <span class="current-price">6 990 ₽</span>
+                                </p>
+                                <div class="product-actions">
+                                    <button class="add-to-cart">В корзину</button>
+                                    <button class="wishlist-btn" aria-label="В избранное">♡</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Сапоги Winter Pro</h3>
+                                <p class="product-description">Теплые зимние сапоги</p>
+                                <p class="product-price">
+                                    <span class="current-price">18 990 ₽</span>
+                                </p>
+                                <div class="product-actions">
+                                    <button class="add-to-cart">В корзину</button>
+                                    <button class="wishlist-btn" aria-label="В избранное">♡</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="product-card">
+                            <div class="product-image"></div>
+                            <div class="product-info">
+                                <h3 class="product-name">Лоферы Comfort Plus</h3>
+                                <p class="product-description">Комфортные лоферы из натуральной кожи</p>
+                                <p class="product-price">
+                                    <span class="current-price">13 990 ₽</span>
+                                </p>
+                                <div class="product-actions">
+                                    <button class="add-to-cart">В корзину</button>
+                                    <button class="wishlist-btn" aria-label="В избранное">♡</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="pagination">
+                        <button class="pagination-btn" disabled>‹ Назад</button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">Вперед ›</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SoleStyle</h4>
+                    <p>Ваш надежный партнер в мире стильной обуви</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <address>
+                        <p>📞 +7 (495) 123-45-67</p>
+                        <p>📧 info@solestyle.ru</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SoleStyle. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
